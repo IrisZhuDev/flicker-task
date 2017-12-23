@@ -2,6 +2,8 @@
 
 This project used Angular and Flicker API to fetch images from Nasa's account.
 
+Please check directory src/app for the code of this app.
+
 ## Live Demo
 
 https://iriszhudev.github.io/flicker-task/
