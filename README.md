@@ -1,27 +1,47 @@
-# FlickerTask
+# Fetch photo with Flicker API
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.2.
+This project used Angular and Flicker API to fetch images from Nasa's account.
+
+## Live Demo
+
+https://iriszhudev.github.io/flicker-task/
+
+## UI and responsive design
+
+This project used UI components from angular-material.
+
+Layout for small screen :
+
+Layout for medium to large screen(>600px):
+
+Sidebar visibility can be toggled by clicking the menu button.
+
+## Browser and device compatibility 
+
+This application has been tested with all the functionaly successfully running on:
+Safari 9,
+Chrome 63, 
+Firefox Developer Edition 58,
+Opera 49,
+Microsoft Edge 38,
+Internet Explorer 11,
+Iphone 5 (iOS Safari & Chrome)
+
+## API in use
+
+This project used flickr.people.getInfo and flickr.people.getPublicPhotos to get photos and user profile from from Nasa's account.
+
+## Sorting and filtering
+
+### Sort
+Fetched photo from Flicker API are sorted by title in ascending order by default.
+Click on the menu button to toggle the sidebar. Click on ascending or descing button to change sorting order of photos.
+
+### Search
+Input value into the search component. Photos will be filtered by the input string(searching in titles).
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+After installing angular-cli and all the dev dependencies via npm, run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
