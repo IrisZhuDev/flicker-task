@@ -1,0 +1,42 @@
+<div (window:resize)="onResize($event)">
+  <mat-drawer-container autosize>
+    <mat-drawer #drawer mode="side" opened={{isSidebarVisible}}>
+      <div fxLayout="column">
+        <button mat-raised-button color="primary" (click)="ascSort()">Ascending</button>
+        <button mat-raised-button color="accent" (click)="descSort()">Descending</button>
+      </div>
+    </mat-drawer>
+    <div class="content-container">
+      <div class="content" fxLayout="row" fxLayout.xs="column" fxFlexFill>
+        <div fxFlex="10">
+          <button type="button" mat-button (click)="drawer.toggle()" id="menu-button">
+            <mat-icon>menu</mat-icon>
+            Sort
+          </button>
+        </div>
+        <div fxFlex="50">
+          <h3 id="app-header-title" class="app-header">Fetch Photos from Flicker</h3>
+        </div>
+        <div fxFlex="40" class="app-header">
+          <mat-form-field>
+            <input matInput type="text" placeholder="Search" [(ngModel)]="searchText"/>
+            <button mat-button *ngIf="searchText" matSuffix mat-icon-button aria-label="Clear" (click)="searchText=''">
+              <mat-icon>close</mat-icon>
+            </button>
+          </mat-form-field>
+        </div>
+      </div>
+      <mat-card *ngFor="let photo of photoList | titleFilter:searchText | orderPhotos:sortDirection">
+        <mat-card-header>
+          <div mat-card-avatar [ngStyle]="{'background-image': 'url(' + backgroundUrl + ')'}"></div>
+          <mat-card-title>{{userName}}</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="{{photo.imageUrl}}">
+        <mat-card-content>
+          <p>{{photo.title}}</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </mat-drawer-container>
+</div>    
+
