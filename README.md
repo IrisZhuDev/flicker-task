@@ -12,7 +12,11 @@ This project used UI components from angular-material.
 
 Layout for small screen :
 
+<img src="screenshot/mobile.png" width="400">
+
 Layout for medium to large screen(>600px):
+
+<img src="screenshot/desktop.png" width="400">
 
 Sidebar visibility can be toggled by clicking the menu button.
 
