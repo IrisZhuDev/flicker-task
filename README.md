@@ -1,4 +1,4 @@
-# Fetch photo with Flicker API
+# Fetch photos with Flicker API
 
 This project used Angular and Flicker API to fetch images from Nasa's account.
 
@@ -18,7 +18,7 @@ Sidebar visibility can be toggled by clicking the menu button.
 
 ## Browser and device compatibility 
 
-This application has been tested with all the functionaly successfully running on:
+This application has been tested with all the features successfully running on:
 Safari 9,
 Chrome 63, 
 Firefox Developer Edition 58,
@@ -29,16 +29,16 @@ Iphone 5 (iOS Safari & Chrome)
 
 ## API in use
 
-This project used flickr.people.getInfo and flickr.people.getPublicPhotos to get photos and user profile from from Nasa's account.
+This project used flickr.people.getInfo and flickr.people.getPublicPhotos to get photos and user profile from Nasa's account.
 
 ## Sorting and filtering
 
 ### Sort
-Fetched photo from Flicker API are sorted by title in ascending order by default.
-Click on the menu button to toggle the sidebar. Click on ascending or descing button to change sorting order of photos.
+Photos from Flicker API are sorted by title in ascending order by default.
+Click on the menu button to toggle the sidebar. Click on ascending or descending button to change sorting order of photos.
 
 ### Search
-Input value into the search component. Photos will be filtered by the input string(searching in titles).
+Photos will be filtered by the input string from the search bar(search in titles).
 
 ## Development server
 
